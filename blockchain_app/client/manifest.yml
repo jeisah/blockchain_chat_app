@@ -1,0 +1,12 @@
+---
+applications:
+- name: blockchain-client
+  random-route: true
+  #command: /bin/sh -c flask run --port 9099
+  command: python run_app.py
+  memory: 2000M
+  disk_quota: 1024M
+  instances: 1
+  #timeout: 180
+  docker:
+    image: jhderagu/blockchain_client:latest

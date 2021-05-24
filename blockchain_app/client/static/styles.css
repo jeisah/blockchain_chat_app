@@ -1,0 +1,526 @@
+/*
+* main color: 0, 64, 95 => 00405F
+* sub color: 2, 191, 227 => 02BFE3
+*/
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: #00405F;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+p {
+    text-align: justify;
+    justify-content: center;
+}
+
+h1 {
+     font-size: 2em;
+     font-weight: 700;
+     padding-top: 3em;
+     line-height: 1.3em;
+}
+
+h2 {
+     font-size: 1.25em;
+     color: #02BFE3;
+     font-weight: 500;
+     line-height: 1.3em;
+}
+
+h3 {
+    font-size: 1em;
+     color: #02BFE3;
+     font-weight: 500;
+     font-style: italic;
+}
+
+h4 {
+    color: #02BFE3;
+    font-weight: 700;    
+}
+
+.slogan {
+    color: #00405F;
+    padding-top: 1em;;
+    padding-bottom: 80%;
+}
+.slogan p {
+    color: #02BFE3;
+    display: inline;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.listPoints li {
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: #00405F;
+}
+
+main {
+    background-color: #FFFFFF;
+    margin-top: 6em;
+}
+
+.sticky-header {
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #02BFE3;
+}
+
+.sticky-header nav {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.sticky-header nav .logo-link img {
+    align-self: flex-start;
+    height: 5em;
+}
+
+.sticky-header nav ul {
+    align-self: flex-end;
+    margin: auto 0;
+    display: inline-flex;
+    padding: 2em;      
+}
+
+.sticky-header nav ul li {
+    display: inline-block;
+}
+.sticky-header nav ul .l1 {
+    width: 150px;
+}
+.sticky-header nav ul .l2 {
+    width: 150px;
+}
+.sticky-header nav ul .l3 {
+    width: 223px;
+}
+.sticky-header nav ul .l4 {
+    width: 215px;
+}
+
+.sticky-header nav ul li a:hover{
+    font-weight: 500;
+}
+
+/*.sticky-header nav ul div {
+max-width: 10em;
+}*/
+
+.main-footer {    
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 0.8em;
+    color: #FFFFFF;   
+
+    background: url("../img/curve_footer_1920px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 4em;
+    padding-top: 14em;
+}
+
+.main-footer .contact {
+    display: block;
+    padding-right: 10em; 
+}
+
+.main-footer .address {    
+    display: block;
+    padding-right: 10em;
+}
+
+.main-footer .links {
+    display: block;
+    padding-right: 6em;
+}
+.main-footer .links a:hover{
+    font-weight: 700;
+}
+
+.main-footer a {
+    color: #FFFFFF;    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+article {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.image {
+    width: 100%;
+}
+
+.articleBackgroundImage {
+    background: url("../img/curve_simple_1920px.png");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.articleBackgroundImage .text {
+    padding-bottom: 45em;
+}
+
+.impressum {
+    display: flex;
+    flex-direction: row;    
+    justify-content: left;
+}
+.impressum > p {      
+    flex-basis: 100%;
+    margin-top: 0em;
+}
+
+.textPages article{
+    text-align: left;
+}
+
+.img_TZM {
+    width: 20em;    
+}
+.h1_TZM {
+    padding: 0;
+    display: inline;
+    font-size: 1.7em;
+}
+.h1_TZM > p {
+    color: #02BFE3;
+    display: inline;
+}
+
+
+.umgImg {
+    background: url("../img/curve_gradient_1920.png");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;    
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+.articleFlex {
+    display: flex;
+    flex-direction: row;  
+    margin-left: 15%;
+    margin-right: 15%; 
+    padding-left: 0em;
+    padding-right: 0em; 
+    text-align: left;
+}
+
+.articleFlex aside {
+    max-width: 50%;
+    align-content: center;
+    justify-content: center;
+
+    padding-bottom: 30em;
+    margin-left: 0%;
+    margin-right: 0%; 
+}
+.articleFlex aside img {
+      max-width: 100%;
+      padding-top: 20%;   
+      margin-left: 20%; 
+}
+
+
+
+@media (min-width: 600px) and 
+(max-width: 950px) { 
+/* Darstellung auf Netbooks */
+        h1 {
+            padding-top: 3.5em;
+        }
+
+        .sticky-header nav ul {
+            align-self: flex-end;
+            margin: auto 0;
+            display: inline-flex;
+            padding: 0.6em;    
+        }
+        .sticky-header nav ul li {
+            padding-right: 1em;
+        }
+        
+        .sticky-header nav ul .l1 {
+            width: 75px;
+        }
+        .sticky-header nav ul .l2 {
+            width: 75px;
+        }
+        .sticky-header nav ul .l3 {
+            width: 112px;
+        }
+        .sticky-header nav ul .l4 {
+            width: 108px;
+        }
+        .sticky-header nav .logo-link img {
+            align-self: flex-start;
+            height: 4em;
+        }
+
+        .main-footer .contact {
+            padding-right: 2em;
+        }
+    
+        .main-footer .address {
+            padding-right: 2em;
+        }
+    
+        .main-footer .links {
+            padding-right: 2em;
+        }
+    
+        article {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    
+        .impressum {   
+            display: block;
+            justify-content: left;
+        }
+     
+        .articleBackgroundImage .text {
+            padding-bottom: 18em;
+        }
+        .articleBackgroundImage2 .text {
+            padding-bottom: 18em;
+        }
+
+        .img_TZM {
+            width: 13em;    
+        }
+        .h1_TZM {
+            font-size: 1.3em;
+        }
+
+        .slogan {            
+            padding-bottom: 18em;
+        }
+
+        .articleFlex aside {           
+            padding-bottom: 18em; 
+        }
+
+        .articleFlex aside img {
+            max-width: 100%;
+            padding-top: 15em; 
+        }
+    }
+
+
+    @media (min-width: 450px) and 
+    (max-width: 600px) { 
+    h1 {
+        padding-top: 3.5em;
+    }
+
+    .sticky-header nav ul {
+        align-self: flex-end;
+        margin: auto 0;
+        display: inline-flex;
+        padding: 0.6em;    
+    }
+    .sticky-header nav ul li {
+        padding-right: 1em;
+    }
+    .sticky-header nav .logo-link img {
+        align-self: flex-start;
+        height: 4em;
+    }
+
+    .main-footer .contact {
+        padding-right: 2em;
+    }
+
+    .main-footer .address {
+        padding-right: 2em;
+    }
+
+    .main-footer .links {
+        padding-right: 2em;
+    }
+
+    article {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .impressum {   
+        display: block;
+        justify-content: left;
+    }
+ 
+    .articleBackgroundImage .text {
+        padding-bottom: 18em;
+    }
+    .articleBackgroundImage2 .text {
+        padding-bottom: 18em;
+    }
+
+    .img_TZM {
+        width: 13em;    
+    }
+    .h1_TZM {
+        font-size: 1.3em;
+    }
+
+    .slogan {            
+        padding-bottom: 12em;
+    }
+
+    .articleFlex {
+        display: block;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 0%;
+        margin-right: 0%; 
+    }
+    .articleFlex aside {
+        max-width: 100%;
+        justify-content: left;        
+        padding-bottom: 1em;
+        margin-left: 0%;
+        margin-right: 0%; 
+    }
+    .articleFlex aside img {
+        max-width: 100%;
+        padding-top: 0em;   
+        margin-left: 0em; 
+    }
+    header {
+        height: 2.5em;;
+    }
+    .sticky-header nav .logo-link img {      
+        height: 2.4em;
+    }
+    .sticky-header  nav ul {
+        display: none;
+    }
+
+    .notDisplayHandy {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+/* mobile GerÃ¤te */ 
+
+        header {
+            height: 2.5em;;
+        }
+        .sticky-header nav .logo-link img {      
+            height: 2.4em;
+        }
+        .sticky-header  nav ul {
+            display: none;
+        }
+        h1 {            
+            padding-top: 0em;
+        }
+    
+        .main-footer {
+            background-image: url("../img/curve_footer_960px.png");
+            padding-bottom: 0em;
+            overflow: hidden;
+            line-height: 1.1em;
+            font-size: 0.6em;
+        }
+
+        .main-footer .contact {
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+    
+        .main-footer .address {
+            padding-right: 1em;
+        }
+    
+        .main-footer .links {
+            padding-right: 1em;
+        }
+    
+        article {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    
+        .impressum {   
+            display: block;
+            justify-content: left;
+        }
+
+        .articleBackgroundImage .text {
+            padding-bottom: 8em;
+        }
+        .articleBackgroundImage2 .text {
+            padding-bottom: 8em;
+        }
+
+        .img_TZM {
+            width: 10em;    
+        }
+        .h1_TZM {
+            font-size: 1em;
+        }
+
+        .slogan {            
+            padding-bottom: 9em;
+        }
+
+        .articleFlex {
+            display: block;
+            text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-left: 0%;
+            margin-right: 0%; 
+        }
+        .articleFlex aside {
+            max-width: 100%;
+            justify-content: left;        
+            padding-bottom: 1em;
+            margin-left: 0%;
+            margin-right: 0%; 
+        }
+        .articleFlex aside img {
+            max-width: 100%;
+            padding-top: 0em;   
+            margin-left: 0em; 
+        }
+
+        .notDisplayHandy {
+            display: none;
+        }
+        
+}

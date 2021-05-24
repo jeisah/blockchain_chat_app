@@ -1,0 +1,12 @@
+---
+applications:
+- name: blockchain-node2
+  random-route: true
+  #command: /bin/sh -c flask run --port 9099
+  command: python node_server.py
+  memory: 2000M
+  disk_quota: 1024M
+  instances: 1
+  #timeout: 180
+  docker:
+    image: jhderagu/blockchain_app:latest

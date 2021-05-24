@@ -1,0 +1,3 @@
+curl -X POST http://blockchain-node1-quick-gerenuk.eu-de.mybluemix.net/register_with -H 'Content-Type: application/json' -d '{"node_address": "http://blockchain-node0-quick-lizard.eu-de.mybluemix.net"}'
+
+curl -X POST http://blockchain-node2-fantastic-meerkat.eu-de.mybluemix.net/register_with -H 'Content-Type: application/json' -d '{"node_address": "http://blockchain-node0-quick-lizard.eu-de.mybluemix.net"}'

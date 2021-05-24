@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <header class="sticky-header">
+      <center>
+      <img src="https://tzm.de/img/logo-4c.png" height=100em alt="TZM Logo">
+      <!--<nav>
+        <ui><a href="http://tzm.de">Home</a></ui>
+        <ui><a href="https://tzm.de/#transformation">About</a></ui>
+        <ui><a href="https://tzm.de/impressum">Contact</a></ui>
+      </nav>-->
+      </center>    
+    </header>
+    
+    <section class="content">
+      <center><h1>{{ title }}</h1></center>
+
+      
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul>
+      {% for message in messages %}
+          <li>{{ message }} </li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+    </section>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+not_used_anymore
+.git
+.vscode
+.gitignore
+README.md
+Dockerfile
+__pycache__
+screenshots
+.dockerignore
+manifest.yml
